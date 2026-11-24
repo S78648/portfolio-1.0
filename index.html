@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html class="dark scroll-smooth" lang="en"><head>
@@ -119,107 +118,8 @@
       },
     }
   </script>
-<style>
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      display: inline-block;
-      vertical-align: middle;
-      line-height: 1;
-    }
-    .custom-grid-pattern {
-      background-size: 32px 32px;
-      background-image: 
-        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-    }
-    
-    /* Ping rings */
-    @keyframes pingSlow {
-      0% { transform: scale(1); opacity: 0.8; }
-      75%, 100% { transform: scale(2.4); opacity: 0; }
-    }
-    .ping-slow {
-      animation: pingSlow 2.2s cubic-bezier(0, 0, 0.2, 1) infinite;
-    }
 
-    @keyframes pulseDot {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.85); }
-    }
-    .pulse-dot {
-      animation: pulseDot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-    }
-
-    /* Packet transmission along vertical and diagonal tracks */
-    @keyframes packetFlowDown {
-      0% { transform: translateY(-8px); opacity: 0; }
-      20% { opacity: 1; }
-      80% { opacity: 1; }
-      100% { transform: translateY(18px); opacity: 0; }
-    }
-    .packet-down-fast {
-      animation: packetFlowDown 1.8s infinite ease-in-out;
-    }
-    .packet-down-delayed {
-      animation: packetFlowDown 1.8s infinite ease-in-out 0.9s;
-    }
-
-    /* Subtle cursor blink */
-    @keyframes cursorBlink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
-    .cursor-blink {
-      animation: cursorBlink 0.9s steps(2, start) infinite;
-    }
-
-    /* Subtle scanline effect on inspect terminals */
-    .scanline-overlay {
-      position: relative;
-    }
-    .scanline-overlay::after {
-      content: " ";
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
-      background-size: 100% 4px;
-      opacity: 0.35;
-      border-radius: inherit;
-    }
-
-    /* Card Micro-interactions: lift and glow hover */
-    .interactive-card {
-      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
-                  box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
-                  border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .interactive-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 0 15px -3px rgba(78, 222, 163, 0.12);
-      border-color: rgba(78, 222, 163, 0.35);
-    }
-
-    .interactive-card-cyan:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 0 15px -3px rgba(76, 215, 246, 0.12);
-      border-color: rgba(76, 215, 246, 0.4);
-    }
-
-    /* Toast notification */
-    #copy-toast {
-      transition: opacity 0.25s ease, transform 0.25s ease;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      *, ::before, ::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary selection:text-on-primary min-h-screen relative custom-grid-pattern">
 <!-- Copy Feedback Tooltip Toast -->
@@ -517,15 +417,13 @@
 <div>
 <div class="flex items-center gap-2">
 <h3 class="text-headline-sm font-headline-sm text-on-surface">Sarvakamin Consultancy Pvt. Ltd.</h3>
-<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20 text-label-sm font-label-sm flex items-center gap-1">
-<span class="w-1.5 h-1.5 rounded-full bg-primary pulse-dot"></span> CURRENT
-</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant border border-outline-variant/30 text-label-sm font-label-sm">COMPLETED</span>
 </div>
 <div class="text-code-md font-code-md text-primary mt-1">Backend Engineer — Spring Boot, Database &amp; System Architecture</div>
 </div>
 <div class="font-code-md text-code-md text-on-surface-variant flex items-center gap-1.5">
 <span class="material-symbols-outlined text-sm">calendar_month</span>
-<span>Jan 2025 – Present · On-Site/Hybrid</span>
+<span>Jan 2025 – Oct 2026 · On-Site/Hybrid</span>
 </div>
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -608,6 +506,56 @@
 <span>Data Integrity</span>
 <span class="text-primary font-semibold">ACID Guaranteed</span>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 md:p-8 rounded-lg bg-surface-container-low border border-outline-variant/30 space-y-6 interactive-card">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-outline-variant/20 pb-4">
+<div>
+<div class="flex items-center gap-2">
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Stratisca</h3>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/30 text-label-sm font-label-sm">CURRENT</span>
+</div>
+<div class="text-code-md font-code-md text-primary mt-1">Founding Technical Lead — Engineering &amp; AI Integration</div>
+</div>
+<div class="font-code-md text-code-md text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+<span>Oct 2026 – Present · Full Time</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<div class="lg:col-span-8 space-y-3">
+<p class="text-body-md font-body-md text-on-surface-variant">
+  Leading technical architecture and development of AI-powered business automation solutions, including an autonomous product catalogue for structured, intelligent product information processing.
+</p>
+<ul class="space-y-2 text-body-md font-body-md text-on-surface-variant list-disc pl-5">
+<li><strong class="text-on-surface">Autonomous Catalogue Platform:</strong> Architecting and developing an autonomous catalogue platform using Next.js, Prisma ORM, and PostgreSQL for structured catalogue management.</li>
+<li><strong class="text-on-surface">Data Architecture:</strong> Designing relational database schemas and data-access workflows with Prisma to support intelligent product information processing.</li>
+<li><strong class="text-on-surface">AI-Driven Workflows:</strong> Building scalable application architecture that connects AI capabilities with structured business data to automate catalogue operations.</li>
+<li><strong class="text-on-surface">Engineering Leadership:</strong> Leading engineering decisions, application architecture, backend workflows, and API integration strategies for the automation platform.</li>
+<li><strong class="text-on-surface">ERP Integration:</strong> Exploring enterprise integration solutions that bridge legacy ERP systems such as SAP and Tally with modern AI-driven workflows for manufacturing and logistics businesses.</li>
+</ul>
+</div>
+<div class="lg:col-span-4 p-4 rounded bg-surface-container border border-outline-variant/20 space-y-3">
+<div class="text-label-sm font-label-sm text-on-surface-variant uppercase">Runtime Stack</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-code-md text-label-sm">Next.js</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-md text-label-sm">Prisma ORM</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-code-md text-label-sm">PostgreSQL</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-tertiary font-code-md text-label-sm">AI Orchestration</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-md text-label-sm">REST APIs</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-md text-label-sm">ERP Integration</span>
+</div>
+<div class="pt-3 border-t border-outline-variant/20 space-y-1.5">
+<div class="text-label-sm font-label-sm text-on-surface-variant flex justify-between">
+<span>Domain</span>
+<span class="text-primary font-semibold">Autonomous Catalogues</span>
+</div>
+<div class="text-label-sm font-label-sm text-on-surface-variant flex justify-between">
+<span>Focus</span>
+<span class="text-secondary font-semibold">ERP Automation</span>
 </div>
 </div>
 </div>
@@ -790,7 +738,6 @@
 <div class="project-item project-distributed p-6 rounded-lg bg-surface-container-low border border-outline-variant/30 space-y-4 interactive-card">
 <div class="flex items-center justify-between">
 <h4 class="text-headline-sm font-headline-sm text-on-surface">CalcFit Tracker</h4>
-<span class="text-label-sm font-label-sm text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">Production Ready</span>
 </div>
 <p class="text-body-md font-body-md text-on-surface-variant">
   Full-featured personal nutrition, caloric metrics, and fitness monitoring engine with automated daily macro aggregation and user analytics endpoints.
@@ -809,21 +756,23 @@
 <!-- Project 4: Product Catalog Platform -->
 <div class="project-item project-enterprise p-6 rounded-lg bg-surface-container-low border border-outline-variant/30 space-y-4 interactive-card">
 <div class="flex items-center justify-between">
-<h4 class="text-headline-sm font-headline-sm text-on-surface">Product Catalog Platform</h4>
-<span class="text-label-sm font-label-sm text-secondary bg-secondary/10 px-2 py-0.5 rounded border border-secondary/20">Full Stack System</span>
+<h4 class="text-headline-sm font-headline-sm text-on-surface">Autonomous Catalogue</h4>
+<span class="text-label-sm font-label-sm text-secondary bg-secondary/10 px-2 py-0.5 rounded border border-secondary/20">AI-Powered System</span>
 </div>
 <p class="text-body-md font-body-md text-on-surface-variant">
-  High-throughput e-commerce inventory and hierarchical product catalog with dynamic facet filtering, category trees, and stock tracking.
+  Autonomous product catalogue that organizes, manages, and intelligently processes structured product information for business automation workflows.
 </p>
 <div class="space-y-1.5 text-body-sm font-body-sm text-on-surface-variant">
-<div>• <strong class="text-on-surface">Backend &amp; Frontend:</strong> Spring Boot 3 REST APIs paired with modern React TypeScript client.</div>
-<div>• <strong class="text-on-surface">Performance:</strong> Redis cached SKU responses with cache-aside eviction policies on inventory changes.</div>
+<div>• <strong class="text-on-surface">Application &amp; Data Layer:</strong> Next.js full-stack architecture with Prisma ORM over PostgreSQL for relational catalogue schemas and data-access workflows.</div>
+<div>• <strong class="text-on-surface">Intelligent Automation:</strong> AI-powered rule engines and REST APIs automate catalogue operations and connect structured business data to ERP integration flows.</div>
 </div>
 <div class="flex flex-wrap gap-1.5 pt-2">
-<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-code-md text-label-sm">Spring Data JPA</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-code-md text-label-sm">React TS</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-code-md text-label-sm">Redis Cache</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-md text-label-sm">REST API</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-code-md text-label-sm">Next.js</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-code-md text-label-sm">Prisma ORM</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-tertiary font-code-md text-label-sm">PostgreSQL</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-code-md text-label-sm">AI Rule Engine</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-md text-label-sm">REST APIs</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-md text-label-sm">ERP Integration</span>
 </div>
 </div>
 <!-- Project 5: Saral ERP — Sycorian Matrimonial System -->
@@ -1097,6 +1046,10 @@
 <span class="text-on-surface">REST API Architecture</span>
 <span class="font-code-md text-label-sm text-primary">Advanced</span>
 </li>
+<li class="flex items-center justify-between">
+<span class="text-on-surface">Next.js (Full-Stack React)</span>
+<span class="font-code-md text-label-sm text-primary">Applied</span>
+</li>
 </ul>
 </div>
 <!-- Category 3 -->
@@ -1352,37 +1305,45 @@
 </div>
 <span class="text-label-sm font-label-sm text-on-surface-variant">TLS_AES_256_GCM_SHA384</span>
 </div>
-<form class="space-y-4" id="rpc-dispatch-form" onsubmit="handleRpcSubmit(event)">
+<form action="https://formspree.io/f/mdeejjnk" class="space-y-4" id="rpc-dispatch-form" method="POST" onsubmit="handleRpcSubmit(event)">
+<input name="_subject" type="hidden" value="New RPC Dispatch — Portfolio Contact"/>
+<input name="_gotcha" style="display:none" type="text"/>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <div class="space-y-1">
 <label class="font-code-md text-label-sm text-on-surface-variant flex items-center gap-1">
 <span class="text-primary">&gt;</span> caller_identity
 </label>
-<input class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded px-3 py-2 text-on-surface font-code-md text-code-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors" id="caller-identity" placeholder="Engineering Lead / Recruiter Name" required="" type="text"/>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded px-3 py-2 text-on-surface font-code-md text-code-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors" id="caller-identity" name="caller_identity" placeholder="Engineering Lead / Recruiter Name" required="" type="text"/>
 </div>
 <div class="space-y-1">
 <label class="font-code-md text-label-sm text-on-surface-variant flex items-center gap-1">
 <span class="text-primary">&gt;</span> return_socket_address
 </label>
-<input class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded px-3 py-2 text-on-surface font-code-md text-code-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors" id="caller-email" placeholder="contact@company.domain" required="" type="email"/>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded px-3 py-2 text-on-surface font-code-md text-code-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors" id="caller-email" name="email" placeholder="contact@company.domain" required="" type="email"/>
 </div>
 </div>
 <div class="space-y-1">
 <label class="font-code-md text-label-sm text-on-surface-variant flex items-center gap-1">
 <span class="text-primary">&gt;</span> payload_intent
 </label>
-<select class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded px-3 py-2 text-on-surface font-code-md text-code-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors" id="payload-intent">
-<option value="hiring">Full-Time Backend Engineering Opportunity</option>
-<option value="consulting">System Architecture Consulting</option>
-<option value="code_review">Codebase Audit / Query Optimization</option>
-<option value="rfc_discussion">Technical RFC Technical Query</option>
-</select>
+<select class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded px-3 py-2 text-on-surface font-code-md text-code-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors" id="payload-intent" name="payload_intent">
+ <option value="hiring">Full-Time Backend Engineering Opportunity</option>
+ <option value="contract">Contract / Freelance Engagement</option>
+ <option value="consulting">System Architecture Consulting</option>
+ <option value="code_review">Codebase Audit / Query Optimization</option>
+ <option value="rfc_discussion">Technical RFC Technical Query</option>
+ <option value="api_integration">API Design / Integration Partnership</option>
+ <option value="mentorship">Mentorship / Technical Guidance</option>
+ <option value="speaking">Speaking / Podcast / Webinar Invite</option>
+ <option value="open_source">Open-Source Collaboration</option>
+ <option value="general">General Inquiry</option>
+ </select>
 </div>
 <div class="space-y-1">
 <label class="font-code-md text-label-sm text-on-surface-variant flex items-center gap-1">
 <span class="text-primary">&gt;</span> request_body
 </label>
-<textarea class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded px-3 py-2 text-on-surface font-code-md text-code-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors" id="caller-message" placeholder="Detail your system requirements, position parameters, or technical inquiry..." required="" rows="4"></textarea>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded px-3 py-2 text-on-surface font-code-md text-code-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors" id="caller-message" name="message" placeholder="Detail your system requirements, position parameters, or technical inquiry..." required="" rows="4"></textarea>
 </div>
 <!-- Interactive Response Console Drawer -->
 <div class="hidden p-3 rounded bg-surface-container-lowest border border-primary/30 font-code-md text-label-sm space-y-1 transition-all" id="rpc-console-output">
@@ -1426,160 +1387,6 @@
 </div>
 </footer>
 <!-- Interactive Scripts: Micro-Interactions, Telemetry, Modals & Toast -->
-<script>
-  // 1. Copy-to-clipboard micro-interaction
-  function copyToClipboard(text, customMessage) {
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(text).then(() => {
-        showToast(customMessage || 'Copied to clipboard!');
-      }).catch(() => {
-        fallbackCopy(text, customMessage);
-      });
-    } else {
-      fallbackCopy(text, customMessage);
-    }
-  }
-
-  function fallbackCopy(text, customMessage) {
-    const tempInput = document.createElement('input');
-    tempInput.value = text;
-    document.body.appendChild(tempInput);
-    tempInput.select();
-    document.execCommand('copy');
-    document.body.removeChild(tempInput);
-    showToast(customMessage || 'Copied to clipboard!');
-  }
-
-  function showToast(msg) {
-    const toast = document.getElementById('copy-toast');
-    const toastMsg = document.getElementById('copy-toast-msg');
-    if (toast && toastMsg) {
-      toastMsg.textContent = msg;
-      toast.classList.remove('opacity-0', 'translate-y-3');
-      toast.classList.add('opacity-100', 'translate-y-0');
-      setTimeout(() => {
-        toast.classList.remove('opacity-100', 'translate-y-0');
-        toast.classList.add('opacity-0', 'translate-y-3');
-      }, 2500);
-    }
-  }
-
-  // 2. Interactive Terminal RPC Form Simulation
-  function handleRpcSubmit(e) {
-    e.preventDefault();
-    const btn = document.getElementById('rpc-submit-btn');
-    const btnText = document.getElementById('rpc-btn-text');
-    const btnIcon = document.getElementById('rpc-btn-icon');
-    const consoleOutput = document.getElementById('rpc-console-output');
-
-    if (!btn || !btnText) return;
-
-    btn.disabled = true;
-    btn.classList.add('opacity-80');
-    btnText.textContent = 'TRANSMITTING PACKET...';
-    btnIcon.textContent = 'sync';
-    btnIcon.classList.add('animate-spin');
-
-    setTimeout(() => {
-      btnIcon.classList.remove('animate-spin');
-      btnIcon.textContent = 'verified';
-      btnText.textContent = 'HTTP 200 ACKNOWLEDGED';
-      btn.classList.remove('bg-primary');
-      btn.classList.add('bg-primary-container');
-
-      if (consoleOutput) {
-        consoleOutput.classList.remove('hidden');
-      }
-
-      showToast('RPC Packet successfully dispatched!');
-
-      setTimeout(() => {
-        btn.disabled = false;
-        btn.classList.remove('opacity-80', 'bg-primary-container');
-        btn.classList.add('bg-primary');
-        btnText.textContent = 'Dispatch RPC Packet';
-        btnIcon.textContent = 'send';
-      }, 4000);
-    }, 1100);
-  }
-
-  // 3. Project Filter Tabs
-  function filterProjects(category) {
-    const projects = document.querySelectorAll('.project-item');
-    const btnAll = document.getElementById('btn-filter-all');
-    const btnDist = document.getElementById('btn-filter-distributed');
-    const btnEnt = document.getElementById('btn-filter-enterprise');
-
-    [btnAll, btnDist, btnEnt].forEach(btn => {
-      if (btn) {
-        btn.className = "px-3 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all";
-      }
-    });
-
-    if (category === 'all') {
-      btnAll.className = "px-3 py-1.5 rounded bg-primary text-on-primary font-semibold transition-all";
-    } else if (category === 'distributed') {
-      btnDist.className = "px-3 py-1.5 rounded bg-secondary text-on-secondary font-semibold transition-all";
-    } else if (category === 'enterprise') {
-      btnEnt.className = "px-3 py-1.5 rounded bg-tertiary text-on-tertiary font-semibold transition-all";
-    }
-
-    projects.forEach(card => {
-      if (category === 'all') {
-        card.style.display = 'block';
-      } else if (category === 'distributed') {
-        card.style.display = card.classList.contains('project-distributed') ? 'block' : 'none';
-      } else if (category === 'enterprise') {
-        card.style.display = card.classList.contains('project-enterprise') ? 'block' : 'none';
-      }
-    });
-  }
-
-  // 4. Modal Drawer Inspector
-  function toggleModal(modalId) {
-    const modal = document.getElementById(modalId);
-    if (!modal) return;
-    if (modal.classList.contains('hidden')) {
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
-    } else {
-      modal.classList.remove('flex');
-      modal.classList.add('hidden');
-    }
-  }
-
-  // 5. Live JVM Telemetry Jitter Simulation
-  function triggerMetricsInspector() {
-    const redis = document.getElementById('mesh-redis-latency');
-    const pool = document.getElementById('mesh-hikari-pool');
-    const p99 = document.getElementById('telemetry-p99');
-
-    if (redis) redis.textContent = `Latency: ${(1.0 + Math.random() * 0.5).toFixed(1)}ms`;
-    if (pool) pool.textContent = `Pool: 20/20 active`;
-    if (p99) p99.textContent = `Avg P99: ${Math.floor(16 + Math.random() * 4)}ms`;
-    
-    showToast('JVM Hikari & Redis cluster telemetry synced: 0 latency jitter');
-  }
-
-  // 6. Metric Counter on Load
-  window.addEventListener('DOMContentLoaded', () => {
-    const counters = document.querySelectorAll('[data-counter-val]');
-    counters.forEach(counter => {
-      const target = parseFloat(counter.getAttribute('data-counter-val'));
-      const prefix = counter.getAttribute('data-counter-prefix') || '';
-      const suffix = counter.getAttribute('data-counter-suffix') || '';
-      let current = 0;
-      const step = target / 20;
-      const interval = setInterval(() => {
-        current += step;
-        if (current >= target) {
-          counter.textContent = `${prefix}${target}${suffix}`;
-          clearInterval(interval);
-        } else {
-          counter.textContent = `${prefix}${current.toFixed(1).replace('.0', '')}${suffix}`;
-        }
-      }, 40);
-    });
-  });
-</script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
 </body></html>
